@@ -1,0 +1,10 @@
+body{
+    height: 250px;
+    width: 250px;
+    background-color: aliceblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    text-align: center;
+    font-size: larger;
+}

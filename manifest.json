@@ -1,0 +1,12 @@
+{
+    "name": "Benford's Law Check",
+    "description": "This chrome extension checks how well the contents of a page follow Benford's law.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+    "default_popup": "index.html"
+    }
+}
