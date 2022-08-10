@@ -1,12 +1,34 @@
 {
+    "manifest_version": 3,
     "name": "Benford's Law Check",
     "description": "This chrome extension checks how well the contents of a page follow Benford's law.",
     "version": "1.0",
-    "manifest_version": 3,
-    "background": {
+    "permissions": [
+        "activeTab",
+        "storage"
+      ],
+      "background": {
         "service_worker": "background.js"
-    },
-    "action": {
-    "default_popup": "index.html"
-    }
-}
+      },
+      "content_scripts":[
+        {
+            "matches": ["<all_urls>"],
+            "js": ["contentScript.js"]
+        }
+      ],
+      "web_accessible_resources": [
+        {
+            "resources": [
+
+            ],
+            "matches":["<all_urls>"]
+        }
+      ],
+      "action":{
+        "default_popup":"index.html",
+        "default_icon":{
+            
+        },
+        "default_title": ""
+      }
+  }
